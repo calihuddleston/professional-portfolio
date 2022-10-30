@@ -7,7 +7,7 @@
 - [Description](#description)
 - [Installation](#install)
 - [Usage](#usage)
-- [Guidelines](#guidelines)
+- [Screenshots](#screenshots)
 - [Test-Instructions](#test)
 - [Licenses](#license)
 - [Contact-Information](#email)
@@ -24,9 +24,12 @@ NA
 
 http://localhost:3000/professional-portfolio
 
-## Guidelines:
+## Screenshots:
+![Screen Shot 2022-10-29 at 9 40 30 PM](https://user-images.githubusercontent.com/102004484/198858806-23f68b63-ec37-4d1a-be6f-7ccd4e31d048.png)
+![Screen Shot 2022-10-29 at 9 40 46 PM](https://user-images.githubusercontent.com/102004484/198858808-ed0499b3-e14a-4f12-be85-27e002c4c8fc.png)
+![Screen Shot 2022-10-29 at 9 40 58 PM](https://user-images.githubusercontent.com/102004484/198858810-ac9a0483-488a-4061-820a-3b144eb8d381.png)
 
-NA
+
 
 ## Test Instructions:
 

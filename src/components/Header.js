@@ -7,6 +7,7 @@ const styles = {
   header: {
     fontFamily: "Playfair-Display",
     padding: 150,
+    width: "calc(95%-65px)",
   },
   description: {
     backgroundColor: "#d58857ff",

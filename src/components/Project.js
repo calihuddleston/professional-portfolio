@@ -26,7 +26,7 @@ function Projects() {
             <img
               className="w-75"
               src="https://user-images.githubusercontent.com/105446523/179026069-76278c0a-c0f1-4789-b197-97f198497480.png"
-              alt="First slide"
+              alt="Slide of first project called Park Me"
             />
           </a>
 
@@ -50,7 +50,7 @@ function Projects() {
             <img
               className="d-block w-75"
               src="https://user-images.githubusercontent.com/102004484/190521257-40af5e1b-0569-4ff7-bd13-c31a8b82e8e6.png"
-              alt="Second slide"
+              alt="Slide of second project called Earth Trek"
             />
           </a>
 
@@ -71,7 +71,11 @@ function Projects() {
             href="https://github.com/BillyFletcher99/a-new-leaf-application"
             className="d-flex justify-content-center"
           >
-            <img className="d-block w-75" src={project3} alt="Third slide" />
+            <img
+              className="d-block w-75"
+              src={project3}
+              alt="Slide of third project called A New Leaf"
+            />
           </a>
           <Carousel.Caption style={styles.describe} className="p-3 rounded">
             <h3>A New Leaf</h3>

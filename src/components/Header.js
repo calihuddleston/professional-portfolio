@@ -69,7 +69,11 @@ function Header() {
       <div>
         <div style={styles.circleTwo}></div>
         <div style={styles.circleOne}></div>
-        <img src={image} style={styles.image}></img>
+        <img
+          src={image}
+          style={styles.image}
+          alt="image of self with glasses sitting at table with laptop on table "
+        ></img>
       </div>
 
       <div>

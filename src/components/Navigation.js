@@ -1,56 +1,59 @@
 import React from "react";
 import "../style.css";
+import { Link } from "react-router-dom";
 
 const styles = {
   card: {
-    margin: -10,
     background: "#8e9d95ff",
     fontFamily: "Playfair-Display",
-    display: "flex",
-    justifyContent: "center",
   },
   heading: {
     minHeight: 50,
     lineHeight: 3.5,
     fontSize: "1.2rem",
-    color: "white",
-    padding: "0 20px",
-    margin: 5,
+    // color: "white",
+    // padding: "0 20px",
+    // margin: 5,
     textDecoration: "none",
   },
 };
 
 function Navbar() {
   return (
-    <nav className="main-header-menu">
-      <div style={styles.card}>
-        <a href="#Home" style={styles.heading}>
-          Home
-        </a>
+    <nav
+      className="main-header-menu d-flex justify-content-around p-3"
+      style={styles.card}
+    >
+      {/* link to main page with about section */}
+      <Link to="/" style={styles.heading} className="text-white">
+        Home
+      </Link>
 
-        <a href="#About" style={styles.heading}>
-          About
-        </a>
+      {/* link to projects section */}
+      <Link to="/MyWork" style={styles.heading} className="text-white">
+        My Work
+      </Link>
 
-        <a href="#Projects" style={styles.heading}>
-          My Work
-        </a>
+      <a
+        href="https://github.com/calihuddleston"
+        style={styles.heading}
+        className="text-white"
+      >
+        GitHub
+      </a>
 
-        <a href="https://github.com/calihuddleston" style={styles.heading}>
-          GitHub
-        </a>
+      <a
+        href="https://www.linkedin.com/in/cali-huddleston-3362a5235/"
+        style={styles.heading}
+        className="text-white"
+      >
+        LinkedIn
+      </a>
 
-        <a
-          href="https://www.linkedin.com/in/cali-huddleston-3362a5235/"
-          style={styles.heading}
-        >
-          LinkedIn
-        </a>
-
-        <a href="#Contact" style={styles.heading}>
-          Contact
-        </a>
-      </div>
+      {/* link to resume section */}
+      <Link to="/Resume" style={styles.heading} className="text-white">
+        Resume
+      </Link>
     </nav>
   );
 }

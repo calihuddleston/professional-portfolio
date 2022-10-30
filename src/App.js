@@ -1,20 +1,33 @@
 import React from "react";
-import Navigation from "./components/Navigation";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/Navigation";
 import Header from "./components/Header";
 import About from "./components/About";
 import Project from "./components/Project";
-import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 import Footer from "./components/Footer";
+
+const styles = {
+  page: {
+    background: "#dbd1c6ff",
+    margin: -20,
+  },
+};
 
 export default function App() {
   return (
-    <div>
-      <Navigation />
-      <Header />
-      {/* <About /> */}
-      <Project />
-      {/* <Contact />
-      <Footer /> */}
+    <div style={styles.page}>
+      <Router>
+        <Navbar />
+        <Header />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/MyWork" element={<Project />} />
+          <Route path="/Resume" element={<Resume />} />
+        </Routes>
+      </Router>
+      <Footer />
     </div>
   );
 }

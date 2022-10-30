@@ -25,12 +25,20 @@ function Navbar() {
       style={styles.card}
     >
       {/* link to main page with about section */}
-      <Link to="/" style={styles.heading} className="text-white">
+      <Link
+        to="/professional-portfolio"
+        style={styles.heading}
+        className="text-white"
+      >
         Home
       </Link>
 
       {/* link to projects section */}
-      <Link to="/MyWork" style={styles.heading} className="text-white">
+      <Link
+        to="/professional-portfolio/MyWork"
+        style={styles.heading}
+        className="text-white"
+      >
         My Work
       </Link>
 
@@ -51,7 +59,11 @@ function Navbar() {
       </a>
 
       {/* link to resume section */}
-      <Link to="/Resume" style={styles.heading} className="text-white">
+      <Link
+        to="/professional-portfolio/Resume"
+        style={styles.heading}
+        className="text-white"
+      >
         Resume
       </Link>
     </nav>

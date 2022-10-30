@@ -22,9 +22,9 @@ export default function App() {
         <Navbar />
         <Header />
         <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/MyWork" element={<Project />} />
-          <Route path="/Resume" element={<Resume />} />
+          <Route path="/professional-portfolio" element={<About />} />
+          <Route path="/professional-portfolio/MyWork" element={<Project />} />
+          <Route path="/professional-portfolio/Resume" element={<Resume />} />
         </Routes>
       </Router>
       <Footer />
